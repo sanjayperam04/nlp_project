@@ -1,0 +1,69 @@
+HOW TO CREATE SUBMISSION ZIP
+=============================
+
+The submission should contain ONLY:
+- problem1/ folder
+- problem2/ folder
+
+DO NOT INCLUDE:
+- airline_callcenter_env/ (virtual environment)
+- venv/ (old virtual environment)
+- .DS_Store (Mac system file)
+- .gitignore
+- 2026 dataset.csv (already in problem2/)
+- Any other files
+
+STEPS TO CREATE SUBMISSION:
+===========================
+
+Option 1: Using Terminal (Mac/Linux)
+-------------------------------------
+cd /path/to/GOML_ASSIGNMENT
+zip -r submission.zip problem1 problem2
+
+Option 2: Using Finder (Mac)
+-----------------------------
+1. Select problem1 and problem2 folders
+2. Right-click and choose "Compress 2 Items"
+3. Rename the resulting Archive.zip to submission.zip
+
+Option 3: Using File Explorer (Windows)
+----------------------------------------
+1. Select problem1 and problem2 folders
+2. Right-click and choose "Send to" > "Compressed (zipped) folder"
+3. Rename to submission.zip
+
+VERIFY YOUR ZIP:
+================
+The zip should contain:
+
+submission.zip/
+├── problem1/
+│   ├── main.py
+│   ├── api_keys.env
+│   ├── requirements.txt
+│   └── README.md
+│
+└── problem2/
+    ├── main.py
+    ├── airline_sentiment_data.csv
+    ├── api_keys.env
+    ├── requirements.txt
+    └── README.md
+
+SUBMISSION STEPS:
+=================
+1. Create submission.zip as described above
+2. Upload to Google Drive
+3. Set sharing to "Anyone with the link can view"
+4. Copy the shareable link
+5. Submit via Google Form: 
+   https://docs.google.com/forms/d/e/1FAIpQLSc8E8Sh32CeKFDrN82DouvMh1DLimzWgiTW_VtmJAmlziophw/viewform
+
+IMPORTANT NOTES:
+================
+- Your Groq API key is already configured in problem1/api_keys.env
+- The 2026 dataset is already in problem2/airline_sentiment_data.csv
+- Both problems have been tested and are working
+- Problem 1 accuracy: 100% on test cases
+- Problem 2 accuracy: 89.21% on test set

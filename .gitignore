@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+airline_callcenter_env/
+*.egg-info/
+dist/
+build/
+
+# API Keys
+api_keys.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models
+*.pkl
+*.joblib
+
+# Data
+# *.csv  # Commented out to allow airline_sentiment_data.csv
+*.xlsx
+*.json
+
+# Logs
+*.log
